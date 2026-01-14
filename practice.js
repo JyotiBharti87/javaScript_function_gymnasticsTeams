@@ -33,9 +33,9 @@ const calcAverage = (score1, score2, score3) => (score1 + score2 + score3) / 3;
 //   return scoreAverage;};
 
 //TEST DATA 1: Dolphins scored 44, 23, and 71. Koalas scored 65, 54, and 49.
-let scoreDolphins = calcAverage(44, 23, 71);
-let scoreKoalas = calcAverage(65, 54, 49);
-console.log(scoreDolphins, scoreKoalas);
+let avgScoreDolphins = calcAverage(44, 23, 71);
+let avgScoreKoalas = calcAverage(65, 54, 49);
+console.log(avgScoreDolphins, avgScoreKoalas);
 
 function checkWinner(avgDolphins, avgKoalas) {
   if (avgDolphins >= 2 * avgKoalas) {
@@ -49,15 +49,15 @@ function checkWinner(avgDolphins, avgKoalas) {
   }
 }
 
-checkWinner(scoreDolphins, scoreKoalas);
+checkWinner(avgScoreDolphins, avgScoreKoalas);
 
 //TEST DATA 2: Dolphins scored 85, 54, and 41. Koalas scored 23, 34, and 27.
-scoreDolphins = calcAverage(85, 54, 41);
-scoreKoalas = calcAverage(23, 34, 27);
+avgScoreDolphins = calcAverage(85, 54, 41);
+avgScoreKoalas = calcAverage(23, 34, 27);
 
-checkWinner(scoreDolphins, scoreKoalas);
+checkWinner(avgScoreDolphins, avgScoreKoalas);
 
 //TEST DATA 2: Dolphins scored 85, 66, and 90. Koalas scored 123, 304, and 427.
-scoreDolphins = calcAverage(85, 66, 90);
-scoreKoalas = calcAverage(123, 304, 427);
-checkWinner(scoreDolphins, scoreKoalas);
+avgScoreDolphins = calcAverage(85, 66, 90);
+avgScoreKoalas = calcAverage(123, 304, 427);
+checkWinner(avgScoreDolphins, avgScoreKoalas);
